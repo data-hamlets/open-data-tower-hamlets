@@ -1,9 +1,9 @@
-title: JKAN
-greeting: Welcome to JKAN
-description: A lightweight, backend-free open data portal, powered by Jekyll.
-baseurl: /jkan
+title: Open Data Tower Hamlets
+greeting: Searchable public repository of data and sources for Lewisham.
+description: "This site is a fork of jkan.io - a free, lightweight, serverless, open data portal!!"
+baseurl: /open-data-tower-hamlets
 logo: /img/jkan.png
-repo: https://github.com/timwis/jkan/
+repo: https://github.com/data-hamlets/open-data-tower-hamlets
 
 # Site theme
 jkan_theme: Cerulean
@@ -39,7 +39,7 @@ defaults:
     values:
       layout: dataset
       category: Uncategorized
-      organization: N/A
+      organization: data hamlets
   - scope:
       path: ""
       type: organizations
