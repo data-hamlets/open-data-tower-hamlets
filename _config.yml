@@ -6,7 +6,7 @@ logo: /img/jkan.png
 repo: https://github.com/timwis/jkan/
 
 # Site theme
-jkan_theme: Default
+jkan_theme: Cerulean
 
 # Authentication
 github_client_id: 
@@ -17,10 +17,10 @@ schema: default
 
 # Nav bar
 navigation:
-  - title: Datasets
-    url: /datasets/
-  - title: Organizations
-    url: /organizations/
+  # - title: Datasets
+  #   url: /datasets/
+  # - title: Organizations
+  #   url: /organizations/
 
 # Collections
 collections:
