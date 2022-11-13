@@ -409,19 +409,3 @@ dataset {
 .mysoc-footer p {
   margin-top: 0
 }
-
-.footer__login-links ul {
-  padding-left: 0;
-  list-style: none outside none;
-  font-size: .666666667em;
-  opacity: 0.6
-}
-
-.footer__login-links li {
-  display: inline-block;
-  margin-right: 1em
-}
-
-.footer__login-links li.admin-only {
-  display: none
-}
