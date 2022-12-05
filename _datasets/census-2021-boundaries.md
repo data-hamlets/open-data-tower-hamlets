@@ -1,6 +1,6 @@
 ---
 schema: default
-title: ONS 2021 census boundaries
+title: ons 2021 census boundaries
 organization: Data hamlets
 notes: LBTH cut of census areas
 resources:
