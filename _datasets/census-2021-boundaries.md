@@ -5,8 +5,11 @@ organization: Data hamlets
 notes: LBTH cut of census areas
 resources:
   - name: OA 2021
-    url: 'https://gist.githubusercontent.com/joel-lbth/8afdafefe431f6e1508cf59993a5b0d8/raw/bc7ce874ab02e6ae8b4b418cf16eff6386cf34c3/lbth_oa21_full.geojson'
+    url: 'https://gist.githubusercontent.com/joel-lbth/9cd8cbf8078d78954bb011a0927001a3/raw/cc247b708b2e52c549c03af5923b9dc8d3eec5af/lbth_oa21.geojson'
     format: geojson
+  - name: OA 2021
+    url: 'https://gist.github.com/joel-lbth/26921bb1ad384752f8c8b03d0f2ec66b/raw/dda37c34103d763d8d0ae2930902615d1b624c15/lbth_oa21.topo.json'
+    format: topojson
   - name: LSOA 2021
     url: 'https://gist.githubusercontent.com/joel-lbth/5c1a6de137eb092bff61e82bd37996aa/raw/8ef694d6ddca99ff17353c2391f85f0309382017/lbth_lsoa21_full.geojson'
     format: geojson
@@ -21,6 +24,6 @@ resources:
     format: csv
 license: 'https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/'
 category:
-  - spatial
+  - spatial, boundaries
 maintainer: data-hamlets
 ---

@@ -12,6 +12,6 @@ resources:
     format: geojson
 license: 'https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/'
 category:
-  - spatial
+  - spatial, boundaries
 maintainer: data-hamlets
 ---
