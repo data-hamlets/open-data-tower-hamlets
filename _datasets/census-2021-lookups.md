@@ -2,7 +2,7 @@
 schema: default
 title: ons 2021 census lookups
 organization: Data hamlets
-notes: census geography and lbth ward lookups
+notes: census geography and additional ward lookups
 resources:
   - name: oa to lsoa to msoa to la lookups
     url: 'https://gist.github.com/2accf452d8921030a18bdb73d90a1400'

@@ -2,7 +2,7 @@
 schema: default
 title: ons 2021 census boundaries
 organization: Data hamlets
-notes: LBTH cut of census areas
+notes: lbth cut of census areas
 resources:
   - name: OA 2021
     url: 'https://gist.githubusercontent.com/joel-lbth/9cd8cbf8078d78954bb011a0927001a3/raw/cc247b708b2e52c549c03af5923b9dc8d3eec5af/lbth_oa21.geojson'
