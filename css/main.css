@@ -91,3 +91,77 @@ dataset {
   padding: .75rem 1rem;
   border-radius: .25rem;
 }
+
+/* custom footer */
+
+.mysoc-footer {
+  margin-top: 2em;
+  background-color: #333;
+  color: #eee;
+  padding: 3em 4em 1em;
+}
+
+.mysoc-footer a {
+  color: #acacac;
+  text-decoration: none;
+}
+
+.mysoc-footer a:hover,
+.mysoc-footer a:focus {
+  color: #fff;
+  text-decoration: underline;
+}
+
+.mysoc-footer__site-name {
+  font-size: 1.5em;
+  line-height: 1em;
+  font-weight: bold;
+  margin: 0 0 .5em 0;
+  color: #fff
+}
+
+.mysoc-footer__links {
+  font-size: 1em;
+  line-height: 1.2em
+}
+
+.mysoc-footer__links ul {
+  margin: 0;
+  padding: 0;
+  list-style: none
+}
+
+.mysoc-footer__links li {
+  margin: 0 0 0.5em 0
+}
+
+.mysoc-footer__legal {
+  font-size: 0.8em;
+  line-height: 1.5em;
+  color: #9a9a9a
+}
+
+.mysoc-footer__badges {
+  margin: 0 -4px;
+  padding: 0;
+  list-style: none
+}
+
+.mysoc-footer__badges li {
+  margin: 0 4px;
+  display: inline-block
+}
+
+.mysoc-footer__badge {
+  display: inline-block;
+  width: 32px;
+  height: 0;
+  padding-top: 32px;
+  overflow: hidden;
+  border-radius: 100%
+}
+
+.mysoc-footer__badge--github {
+  background: transparent url("https://data.mysociety.org/theme/img/mysoc-footer/icon-github.png") 0 0 no-repeat;
+}
+
