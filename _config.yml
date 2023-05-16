@@ -8,10 +8,6 @@ repo: https://github.com/data-hamlets/open-data-tower-hamlets
 # Site theme
 jkan_theme: Default
 
-# Authentication
-github_client_id: 
-gatekeeper_host: 
-
 # Dataset schema
 schema: default
 
@@ -30,9 +26,17 @@ collections:
   organizations:
     output: true
     permalink: /organizations/:path/
+  dataset_categories:
+    output: true
+    permalink: /categories/:path/
 
 # Collections (cont'd)
 defaults:
+  - scope:
+      path: ""
+      type: dataset_categories
+    values:
+      layout: category
   - scope:
       path: ""
       type: datasets
@@ -77,13 +81,19 @@ opengraph:
 
 # Exclude these files from the build
 exclude:
+  - CONTRIBUTING.md
+  - Dockerfile
+  - docker-compose.yml
   - Gemfile
   - Gemfile.lock
   - vendor
-  - .travis.yml
   - node_modules
   - scripts/src
   - package.json
-  - webpack.config.js
+  - package-lock.json
   - README.md
   - LICENSE
+  - netlify
+  - netlify.toml
+  - .parcel-cache
+  - docs
