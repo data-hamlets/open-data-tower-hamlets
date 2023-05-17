@@ -13,6 +13,9 @@ resources:
   - name: LSOA 2021
     url: 'https://gist.githubusercontent.com/joel-lbth/5c1a6de137eb092bff61e82bd37996aa/raw/8ef694d6ddca99ff17353c2391f85f0309382017/lbth_lsoa21_full.geojson'
     format: geojson
+  - name: LSOA 2021
+    url: 'https://gist.github.com/joel-lbth/bee32cc4bb1c9aa6856a1217a1e840df/raw/d79a01730fcd2e27677f7723c54844e4dda1a108/lbth-lsoa-21.topo.json'
+    format: topojson
   - name: MSOA 2021
     url: 'https://gist.github.com/joel-lbth/a8cb5f5055ce5f507b2d49b151ca19de/raw/7cfb11258d3db1bdd6fb829965d079578b039017/lbth_msoa21_full.geojson'
     format: geojson
