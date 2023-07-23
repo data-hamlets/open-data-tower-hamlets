@@ -5,34 +5,13 @@
   <span class="navbar-toggler-icon"></span>
 </button>
     <div class="collapse navbar-collapse" id="navbarNavDropdown">
-      <ul class="nav navbar-nav">
+      <ul class="navbar-nav">
         {% for link in site.navigation %}
-        {% if link.sub-pages | size > 0 %}
-        {% assign active-sub-page = link.sub-pages where_exp: "item", "page.url != '/' and item.url contains page.url" %}
-        {% assign active-count = active-sub-page size %}
-        {% if active-count > 0 %}
-        <li class="dropdown active">
+          {% if page.url contains link.url %}
+          <li class="nav-item"><a class="nav-link active" href="{{ site.baseurl }}{{ link.url }}" aria-current="page">{{ link.title }}</a></li>
           {% else %}
-        <li class="dropdown">
+          <li class="nav-item"><a class="nav-link" href="{{ site.baseurl }}{{ link.url }}">{{ link.title }}</a></li>
           {% endif %}
-          <a href="{{ site.baseurl }}{{ link.url }}" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-            {{ link.title }} <span class="caret"></span>
-          </a>
-          <ul class="dropdown-menu">
-            {% for sub-link in link.sub-pages %}
-            {% if page.url == sub-link.url %}
-            <li class="active"><a href="{{ site.baseurl }}{{ sub-link.url }}">{{ sub-link.title }}</a></li>
-            {% else %}
-            <li><a href="{{ site.baseurl }}{{ sub-link.url }}">{{ sub-link.title }}</a></li>
-            {% endif %}
-            {% endfor %}
-          </ul>
-        </li>
-        {% elsif page.url contains link.url %}
-        <li class="active"><a href="{{ site.baseurl }}{{ link.url }}">{{ link.title }} <span class="sr-only">(current)</span></a></li>
-        {% else %}
-        <li><a href="{{ site.baseurl }}{{ link.url }}">{{ link.title }} </a></li>
-        {% endif %}
         {% endfor %}
       </ul>
     </div>
