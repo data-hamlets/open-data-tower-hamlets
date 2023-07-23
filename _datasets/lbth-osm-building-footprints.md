@@ -1,7 +1,7 @@
 ---
 schema: default
 title: lbth osm building footprints
-organization: Data hamlets
+organization: OpenStreetMap
 notes: downloaded with osmnx in nov 22, these can be spatial-joined to census and ward boundaries to create <a href="https://www.researchgate.net/profile/Danny-Dorling/publication/225319648/figure/fig1/AS:339482374098947@1457950313325/A-fragment-of-Booths-Descriptive-Map-of-London-Poverty-Source-Dorling-et-al-2000.png">booth map</a> style visualisations
 resources:
   - name: lbth building footprints
