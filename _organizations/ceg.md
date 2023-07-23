@@ -2,7 +2,7 @@
 schema: default
 title: Clinical Effectiveness Group
 description: We use data-driven tools and research to improve population health in North East London and beyond.
-logo: 'https://blog.hpc.qmul.ac.uk/assets/images/qmullogo.jpg'
+logo: 'https://media-exp1.licdn.com/dms/image/C560BAQGa1KRFlz3BGA/company-logo_200_200/0?e=2159024400&v=beta&t=24Y9aTKJqUu8uA1IZTnc84w8rFR4LvqhCAVfb7bVQyc'
 type:
 - Research group
 portal_url: 
