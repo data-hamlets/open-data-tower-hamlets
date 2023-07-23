@@ -1,7 +1,7 @@
 ---
 schema: default
 title: ons 2021 census lookups
-organization: Data hamlets
+organization: Office for National Statistics
 notes: census geography and additional ward lookups
 resources:
   - name: oa to lsoa to msoa to la lookups

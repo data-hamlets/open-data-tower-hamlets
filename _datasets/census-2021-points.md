@@ -1,7 +1,7 @@
 ---
 schema: default
 title: ons 2021 census points
-organization: Data hamlets
+organization: Office for National Statistics
 notes: lbth cut of census areas
 resources:
   - name: OA population weighted centroids 2021
