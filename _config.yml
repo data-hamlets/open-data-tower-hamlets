@@ -17,7 +17,12 @@ navigation:
     url: /datasets/
   - title: Organizations
     url: /organizations/
-
+  - title: About
+    sub-pages:
+      - title: About Open Data Tower Hamlets
+        url: /about/
+      - title: What is Open Data?
+        url: /about_open_data/
 # Collections
 collections:
   datasets:
