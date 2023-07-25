@@ -12,6 +12,20 @@
   <link rel="stylesheet" href="{{ site.baseurl }}/css/main.css">
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
 
+  <link
+    rel="stylesheet"
+    href="https://pyscript.net/latest/pyscript.css"
+  />
+  <script defer src="https://pyscript.net/latest/pyscript.js"></script>
+    var settings = {
+    BASE_URL: {{ site.baseurl | jsonify }} || "",
+    PAGE_URL: {{ page.url | jsonify }},
+    REPO_BRANCH: {% if site.github.is_user_page %}"master"{% else %}"gh-pages"{% endif %},
+    REPO_OWNER: {{ site.github.owner_name | jsonify }},
+    REPO_NAME: {{ site.github.project_title | jsonify }}
+    }
+  </script>
+
   {% if site.digital_analytics_program.enabled == true %}
     <!-- US Digital Analytics Program - see https://analytics.usa.gov for data-->
     <script id="_fed_an_ua_tag" src="https://dap.digitalgov.gov/Universal-Federated-Analytics-Min.js?agency={{ site.digital_analytics_program.agency }}&subagency={{ site.digital_analytics_program.subagency }}"></script>
@@ -40,18 +54,4 @@
   <script>
   document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/, 'js');
 
-  <link
-            rel="stylesheet"
-            href="https://pyscript.net/latest/pyscript.css"
-        />
-  <script defer src="https://pyscript.net/latest/pyscript.js"></script>
-
-  var settings = {
-    BASE_URL: {{ site.baseurl | jsonify }} || "",
-    PAGE_URL: {{ page.url | jsonify }},
-    REPO_BRANCH: {% if site.github.is_user_page %}"master"{% else %}"gh-pages"{% endif %},
-    REPO_OWNER: {{ site.github.owner_name | jsonify }},
-    REPO_NAME: {{ site.github.project_title | jsonify }}
-  }
-  </script>
 </head>
