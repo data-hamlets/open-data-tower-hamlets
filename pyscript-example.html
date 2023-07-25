@@ -34,8 +34,6 @@ permalink: /pyscript/
   folium.Choropleth(
       geo_data=geo_json,
       name="choropleth",
-      data=borough,
-      columns=["State", "Unemployment"],
       key_on="feature.OA21CD",
       line_opacity=0.8,
   ).add_to(m)
