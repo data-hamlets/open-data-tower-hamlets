@@ -17,14 +17,6 @@
     href="https://pyscript.net/latest/pyscript.css"
   />
   <script defer src="https://pyscript.net/latest/pyscript.js"></script>
-    var settings = {
-    BASE_URL: {{ site.baseurl | jsonify }} || "",
-    PAGE_URL: {{ page.url | jsonify }},
-    REPO_BRANCH: {% if site.github.is_user_page %}"master"{% else %}"gh-pages"{% endif %},
-    REPO_OWNER: {{ site.github.owner_name | jsonify }},
-    REPO_NAME: {{ site.github.project_title | jsonify }}
-    }
-  </script>
 
   {% if site.digital_analytics_program.enabled == true %}
     <!-- US Digital Analytics Program - see https://analytics.usa.gov for data-->
@@ -53,5 +45,13 @@
 
   <script>
     document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/, 'js');
+  
+    var settings = {
+      BASE_URL: {{ site.baseurl | jsonify }} || "",
+      PAGE_URL: {{ page.url | jsonify }},
+      REPO_BRANCH: {% if site.github.is_user_page %}"main"{% else %}"gh-pages"{% endif %},
+      REPO_OWNER: {{ site.github.owner_name | jsonify }},
+      REPO_NAME: {{ site.github.project_title | jsonify }}
+    }
   </script>
 </head>
