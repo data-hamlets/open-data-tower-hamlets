@@ -21,6 +21,8 @@ navigation:
     url: /about/
   - title: Open Data
     url: /about_open_data/
+  - title: TH_Explorer
+    url: /borough-data-explorer/
 # Collections
 collections:
   datasets:
